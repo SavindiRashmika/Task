@@ -25,6 +25,53 @@
 
   });
 
+
+  //cace 03
+
+  let btn=document.querySelector("#btn");
+  let ol=document.querySelector("#list");
+
+  btn.addEventListener("click",function (){
+    let typInp=document.querySelector("#txt").value;
+    let li=document.createElement("li");
+    li.setAttribute("class","list-group-item");
+    li.textContent=typInp;
+    ol.append(li);
+  });
+  // case 01
+  /*document.getElementById("txt").addEventListener("keyup",function () {
+      document.getElementById("H1").innerText = document.getElementById("txt").value;
+  })
+
+  document.getElementById("btn1").addEventListener("click",function () {
+      document.getElementById("H1").style.color="red";
+  })*/
+
+
+  // case 02
+  /*document.querySelector("#btn2").addEventListener('click',function(){
+      var typeValue=document.querySelector("#url").value;
+      var divContainer=document.querySelector("#img");
+
+      divContainer.style.background=`url(${typeValue})`;
+      divContainer.style.backgroundPosition='center';
+      divContainer.style.backgroundSize='contain';
+      divContainer.style.backgroundRepeat='no-repeat';
+  })*/
+
+
+
+
+  // document.getElementById("h1ID").addEventListener("click",function () {
+  //     document.getElementById("h1ID").remove();
+  // })
+  //
+  // document.querySelector("button").addEventListener("click",function(){
+  //     document.querySelector("#h2ID").innerText=document.querySelector('input').value;
+  // });
+
+
+
 </script>
 </body>
 </html>
